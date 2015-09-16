@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mobile_photo"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:src="@drawable/slidetorial_mobile_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="3"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loginLabel"
+            android:text="@string/login"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/loginField"
+            android:hint="@string/loginFieldHint"
+            android:textColorHint="#032363"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/form_ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:src="@drawable/user_email_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/loginField"
+            android:layout_alignTop="@id/loginField"
+            android:layout_alignBottom="@id/loginField"/>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:background="@drawable/form_ab"
+            android:hint="@string/passwordFieldHint"
+            android:textColorHint="#032363"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:src="@drawable/password_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/passwordField"
+            android:layout_alignTop="@id/passwordField"
+            android:layout_alignBottom="@id/passwordField"/>
+
+        <ImageButton
+            android:id="@+id/loginButton"
+            android:background="@drawable/button_white"
+            android:src="@drawable/login_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="login"/>
+
+        <TextView
+            android:id="@+id/createAccountButton"
+            android:background="@drawable/button_blue"
+            android:text="@string/newAccountButton"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:clickable="true"
+            android:onClick="createAccount"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

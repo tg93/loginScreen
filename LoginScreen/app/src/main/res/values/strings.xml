@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="login">LOG IN TO YOUR ACCOUNT</string>
+    <string name="newAccount">CREATE NEW ACCOUNT</string>
+    <string name="newAccountButton">CREATE NEW ACCOUNT</string>
+    <string name="passwordFieldHint">password</string>
+    <string name="loginFieldHint">email</string>
+    <string name="action_settings">Settings</string>
+</resources>
